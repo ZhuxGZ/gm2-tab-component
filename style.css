@@ -1,0 +1,51 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: lightgray;
+}
+
+.container {
+	margin: 2em;
+}
+
+.tabs {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	font-size: 19px;
+	margin-bottom: 0;
+}
+
+.tabs li {
+	background-color: white;
+	padding: 0.7em;
+	margin-bottom: 0;
+	border-bottom: 2px solid lightgray;
+	border-left: 2px solid lightgray;
+}
+
+.tabs li:first-child {
+	border-radius: 5px 0px 0px 0px;
+	border-left: none;
+}
+.tabs li:last-child {
+	border-radius: 0px 5px 0px 0px;
+	border-right: none;
+}
+
+.active {
+	font-weight: bold;
+	border-bottom: none !important;
+}
+
+.info {
+	display: none;
+	padding: 1em;
+	background-color: white;
+	border-radius: 0px 5px 5px;
+}
+
+.shown {
+	display: block;
+}
