@@ -24,6 +24,7 @@ body {
 	margin-bottom: 0;
 	border-bottom: 1px solid lightgray;
 	border-left: 1px solid lightgray;
+	cursor: pointer;
 }
 
 .tabs li:first-child {
