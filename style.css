@@ -24,7 +24,10 @@ body {
 	margin-bottom: 0;
 	border-bottom: 1px solid lightgray;
 	border-left: 1px solid lightgray;
+<<<<<<< HEAD
 	cursor: pointer;
+=======
+>>>>>>> 8cd1adfb5d6323323e99ce6dfbb066f8fbec0d95
 }
 
 .tabs li:first-child {
