@@ -6,8 +6,8 @@ tabs.forEach((tab) => {
 		info.forEach((infoBlock) => {
 			if (infoBlock.id === tab.dataset.id) {
 				tabs.forEach((tab) => tab.classList.remove("active"));
-				info.forEach((infoBlock) => infoBlock.classList.remove("shown"));
-				infoBlock.classList.add("shown");
+				info.forEach((infoBlock) => infoBlock.classList.remove("active"));
+				infoBlock.classList.add("active");
 				tab.classList.add("active");
 			}
 		});

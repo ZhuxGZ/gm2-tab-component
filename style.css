@@ -7,6 +7,7 @@ body {
 
 .container {
 	margin: 2em;
+	width: 85%;
 }
 
 .tabs {
@@ -21,8 +22,8 @@ body {
 	background-color: white;
 	padding: 0.7em;
 	margin-bottom: 0;
-	border-bottom: 2px solid lightgray;
-	border-left: 2px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	border-left: 1px solid lightgray;
 }
 
 .tabs li:first-child {
@@ -34,18 +35,19 @@ body {
 	border-right: none;
 }
 
-.active {
+.tabs li.active {
 	font-weight: bold;
 	border-bottom: none !important;
 }
 
 .info {
+	box-sizing: border-box;
 	display: none;
-	padding: 1em;
+	padding: 1.5em;
 	background-color: white;
 	border-radius: 0px 5px 5px;
 }
 
-.shown {
+.info.active {
 	display: block;
 }
