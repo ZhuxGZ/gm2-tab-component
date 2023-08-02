@@ -2,7 +2,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: lightgray;
+	background: rgb(243, 243, 243);
 }
 
 .container {
@@ -11,29 +11,30 @@ body {
 }
 
 .tabs {
+	position: relative;
 	display: flex;
 	list-style: none;
 	padding: 0;
 	font-size: 19px;
 	margin-bottom: 0;
+	z-index: 10;
 }
 
 .tabs li {
 	background-color: white;
 	padding: 0.7em;
 	margin-bottom: 0;
-	border-bottom: 1px solid lightgray;
-	border-left: 1px solid lightgray;
+	border: 1px solid lightgray;
+	border-left: none;
 	cursor: pointer;
 }
 
 .tabs li:first-child {
 	border-radius: 5px 0px 0px 0px;
-	border-left: none;
+	border-left: 1px solid lightgray;
 }
 .tabs li:last-child {
 	border-radius: 0px 5px 0px 0px;
-	border-right: none;
 }
 
 .tabs li.active {
@@ -42,11 +43,15 @@ body {
 }
 
 .info {
+	position: relative;
 	box-sizing: border-box;
 	display: none;
 	padding: 1.5em;
 	background-color: white;
 	border-radius: 0px 5px 5px;
+	border: 1px solid lightgray;
+	top: -1px;
+	z-index: 1;
 }
 
 .info.active {
